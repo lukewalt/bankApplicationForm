@@ -1,6 +1,11 @@
 
 /*<-------------------- Basic Layout --------------------->*/
 
+
+#title {
+  text-align: center;
+}
+
 section {
   display: flex;
   flex-grow: 1;
@@ -17,6 +22,7 @@ section input {
 
 
 /*<------------------ Form Validation ------------------->*/
+
 
 input:required {
   background-color: lightblue;
