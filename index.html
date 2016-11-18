@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>Banking Form</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
 	<form action="index.html" method="post">
 	    <h1>Banking Form</h1>
-	        <section>	          
+	        <section>
 	          <label for="name">First Name:</label>
 	          <input type="text" id="first_name" name="user_firstname">
 
@@ -16,10 +17,10 @@
 
 	          <label for="name">Last Name:</label>
 	          <input type="text" id="last_name" name="user_lastname">
-	          
+
 	          <label for="address">Address:</label>
 	          <input type="text" id="address" name="user_address">
-	          
+
 	          <label for="occupation">Occupation:</label>
 	          <input type="text" id="occupation" name="occupation">
 
@@ -29,21 +30,20 @@
 	          <label for="employper_address">Employer Address:</label>
 	          <input type="text" id="employper_address" name="employper_address">
 	      	</section>
-	      	<section>
-		          <label for="loan">Type of Loan</label>
-		          <select id="loan" name="type_of_loan">
-		            
-		            <option value="commercial">Commercial</option>
-		            <option value="real_estate">Real Estate</option>
-		            <option value="personal">Personal</option>
-		            <option value="mortgage">Mortgage</option>
-		    	  </select>
-		   	</section>
 
+	      	<section>
+	          <label for="loan">Type of Loan</label>
+	          <select id="loan" name="type_of_loan">
+	            <option value="commercial">Commercial</option>
+	            <option value="real_estate">Real Estate</option>
+	            <option value="personal">Personal</option>
+	            <option value="mortgage">Mortgage</option>
+	    	  	</select>
+		   		</section>
+
+					<section>
 	          <label for="request_amount">Request Amount:</label>
 	          <input type="text" id="request_amount" name="user_request_amount">
-	        <section>
-
 	          <label>Duration of Loan:</label>
 	          <input type="radio" id="duration" name="loan_duration_5"><label for="duration" class="light">5 Years</label><br>
 	          <input type="radio" id="duration" name="loan_duration_10"><label for="duration" class="light">10 Years</label><br>
@@ -62,24 +62,22 @@
 	        </section>
 
 	        <section>
-		      <label for="additional_comments">Additional Comments:</label>
-		      <input type="text" id="additional_comments" name="user_additional_comments">
+		      	<label for="additional_comments">Additional Comments:</label>
+		      	<input type="text" id="additional_comments" name="user_additional_comments">
 	        </section>
 
 	        <section>
 		        <label for="email">Email:</label>
-		        <input type="text" id="email" name="user_email">
+		        <input type="text" id="email" name="user_email" required/>
 
 		        <label for="phone">Phone:</label>
-		        <input type="text" id="phone" name="user_phone">
+		        <input type="text" id="phone" name="user_phone" required/>
 
 		        <label for="linkedin">LinkedIn Profile URL:</label>
-		        <input type="text" id="linkedin" name="user_linkedin">
+		        <input type="url" id="linkedin" name="user_linkedin" required/>
 	        </section>
-	          
+
 	</form>
 
 </body>
 </html>
-
-
