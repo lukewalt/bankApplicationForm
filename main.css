@@ -1,0 +1,39 @@
+
+/*<-------------------- Basic Layout --------------------->*/
+
+
+#title {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 3%;
+}
+
+section label,
+section input {
+  margin: 1%;
+}
+
+
+/*<------------------ Form Validation ------------------->*/
+
+
+input:required {
+  background-color: lightblue;
+}
+
+input:required:valid {
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+input:required:invalid {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
